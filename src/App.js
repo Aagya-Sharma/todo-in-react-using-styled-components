@@ -54,7 +54,7 @@ function App() {
         desc = {desc}
       />
       <Index newTask = {newTask} 
-        todos= { todos.filter(todo=>((todo.newTask)).toLowerCase().includes(search.toLowerCase()))}
+        todos= { todos.filter(todo=>((todo.newTask)).toLowerCase().includes(search.toLowerCase()) || ((todo.desc)).toLowerCase().includes(search.toLowerCase())) }
         handleDelete = {handleDelete}
         handleCheck ={handleCheck}
       />
